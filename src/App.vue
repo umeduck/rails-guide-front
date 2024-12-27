@@ -1,18 +1,12 @@
 <template>
   <div id="app">
     <router-view />
-    <ApiTest></ApiTest>
   </div>
 </template>
 
 <script>
-import ApiTest from './components/ApiTest.vue';
-
 export default {
   name: 'App',
-  components: {
-    ApiTest
-  }
 }
 </script>
 
