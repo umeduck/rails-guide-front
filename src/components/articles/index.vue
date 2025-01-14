@@ -2,11 +2,10 @@
 <h1>Articles</h1>
 <ul>
     <li v-for="article in articles" :key="article.id">
-      <!-- 記事タイトル(詳細リンク付き) -->
-       {{ article.title }}
+       <router-link :to="`articles/${article.id}`">{{ article.title }}</router-link>
     </li>
 </ul>
-<!-- 記事作成リンク -->
+<router-link to="articles/new">記事作成</router-link>
 </template>
 
 <script setup>
